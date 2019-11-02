@@ -1,4 +1,4 @@
-%% run v1b on all EFROS shading images
+%% run v1c on all EFROS shading images
 clear all; close all; clc;
 %% PATHS
 addpath(genpath('./tools'))

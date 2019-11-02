@@ -1,4 +1,4 @@
-%% visualize v1b on all EFROS IID images on NARIHIRA dataset
+%% visualize v1b on all Filtering IID images on NARIHIRA dataset
 close all; clear all; clc;
 %% PATHS
 RpathBase = '/home/saurabh/WORK/CODES/quaternions/OLD/qIID/qIID_PCP/RESULTS/meta7_qIID_rpca_v1b/';
