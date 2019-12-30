@@ -6,13 +6,13 @@ y = I(:,:,2); y = y(:);
 z = I(:,:,3); z = z(:);
 qI = quaternion( w, x, y, z );
 
-[A1,E1]       = inexact_alm_qrpca(qI, k1/sqrt(m*n), 1e-7, 1000); 
-[A2,E2]       = inexact_alm_qrpca(A1, k2/sqrt(m*n), 1e-7, 1000); 
-[A3,E3]       = inexact_alm_qrpca(A2, k3/sqrt(m*n), 1e-7, 1000); 
-[A4,E4]       = inexact_alm_qrpca(A3, k4/sqrt(m*n), 1e-7, 1000); 
-[A5,E5]       = inexact_alm_qrpca(A4, k5/sqrt(m*n), 1e-7, 1000); 
-[A6,E6]       = inexact_alm_qrpca(A5, k6/sqrt(m*n), 1e-7, 1000); 
-[A7,E7]       = inexact_alm_qrpca(A6, k7/sqrt(m*n), 1e-7, 1000); 
+[A1,E1] = inexact_alm_qrpca(qI, k1/sqrt(m*n), 1e-7, 1000);    fprintf('..1');
+[A2,E2] = inexact_alm_qrpca(A1, k2/sqrt(m*n), 1e-7, 1000);    fprintf('..2');
+[A3,E3] = inexact_alm_qrpca(A2, k3/sqrt(m*n), 1e-7, 1000);    fprintf('..3');
+[A4,E4] = inexact_alm_qrpca(A3, k4/sqrt(m*n), 1e-7, 1000);    fprintf('..4');
+[A5,E5] = inexact_alm_qrpca(A4, k5/sqrt(m*n), 1e-7, 1000);    fprintf('..5');
+[A6,E6] = inexact_alm_qrpca(A5, k6/sqrt(m*n), 1e-7, 1000);    fprintf('..6');
+[A7,E7] = inexact_alm_qrpca(A6, k7/sqrt(m*n), 1e-7, 1000);    fprintf('..7');
 
 A1x = reshape(A1.x, [m,n]);     A1y = reshape(A1.y, [m,n]);     A1z = reshape(A1.z, [m,n]);
 E1x = reshape(E1.x, [m,n]);     E1y = reshape(E1.y, [m,n]);     E1z = reshape(E1.z, [m,n]);

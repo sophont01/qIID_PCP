@@ -79,8 +79,6 @@ for i=1:1:numel(D)
     
     
     
-    
-    
     %% RESULTS
     if saveFlag
         savePath = fullfile(saveDir,[Iname '.png']);
